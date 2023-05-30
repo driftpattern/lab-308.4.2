@@ -66,7 +66,7 @@ for (const turtle of ninjaTurtles) {
     console.log(capitalizedTurtle);
 }
 
-*/
+
 ////////////////////////////////
 // Methods Revisited
 ////////////////////////////////
@@ -88,5 +88,15 @@ if (index !== -1) {  // if 'Django Unchained' exists in the array
   favMovies.slice(index, 1, 'Avatar');  // replace 'Django Unchained' with 'Avatar'
   console.log(favMovies);
 }
+*/
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
 
+// remove Eggbert
+whereIsWaldo.splice(1, 1);
 
+// change "Neff" to "No One"
+whereIsWaldo[2][2] = "No One";
+
+console.log(whereIsWaldo);
