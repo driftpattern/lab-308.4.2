@@ -100,7 +100,7 @@ whereIsWaldo.splice(1, 1);
 whereIsWaldo[2][2] = "No One";
 
 console.log(whereIsWaldo);
-*/
+
 
 ////////////////////////////////
 // Excited Kittens
@@ -121,3 +121,28 @@ const kittyTalk = [
       console.log(kittyTalk[roundedIndex]);
     }
   }
+*/
+
+////////////////////////////////
+// Find the Median
+////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+// place in order
+nums.sort();
+
+// middle of ordered array
+const mid = Math.floor(nums.length / 2);
+
+// even or odd?
+if (nums.length % 2 === 0) {
+  // if even, get average of two middle numbers
+  const median = (nums[mid - 1] + nums[mid]) / 2;
+  console.log(median);
+} else {
+  // if odd, just print the middle number
+  const median = nums[mid];
+  console.log(median);
+}
+
+
