@@ -55,7 +55,7 @@ console.log(dart);
 
 wolfy[0] = "Gameboy";
 console.log(wolfy);
-*/
+
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
@@ -65,3 +65,28 @@ for (const turtle of ninjaTurtles) {
     const capitalizedTurtle = turtle.toUpperCase();
     console.log(capitalizedTurtle);
 }
+
+*/
+////////////////////////////////
+// Methods Revisited
+////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+console.log(favMovies.indexOf("Titanic"));
+
+favMovies.sort();
+favMovies.pop();
+favMovies.push('Guardians of the Galaxy');
+// console.log(favMovies);
+
+// favMovies == favMovies.shift();
+// favMovies == favMovies.unshift();
+
+const index = favMovies.indexOf('Django Unchained');
+
+if (index !== -1) {  // if 'Django Unchained' exists in the array
+  favMovies.slice(index, 1, 'Avatar');  // replace 'Django Unchained' with 'Avatar'
+  console.log(favMovies);
+}
+
+
