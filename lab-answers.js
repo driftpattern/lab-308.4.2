@@ -34,7 +34,7 @@ for (let i = 1; i <= 100; i++) {
   
     console.log(output);
   }
-*/
+
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
@@ -55,3 +55,13 @@ console.log(dart);
 
 wolfy[0] = "Gameboy";
 console.log(wolfy);
+*/
+////////////////////////////////
+// Yell at the Ninja Turtles
+////////////////////////////////
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (const turtle of ninjaTurtles) {
+    const capitalizedTurtle = turtle.toUpperCase();
+    console.log(capitalizedTurtle);
+}
